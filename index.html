@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Encuesta de preferencia de Cómics</h1>
+          <p id="description" class="description text-center">
+            Queremos saber acerca de tu preferencia por los cómics
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Ingresa tus nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Correo</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Ingresa tu correo"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >WhatsApp<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="WhatsApp"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Ingresa tu número WhatsApp"
+            />
+          </div>
+          <div class="form-group">
+            <p>Selecciona tu editorial de Cómics favorita</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Selecciona</option>
+              <option value="DC Cómics">DC Cómics</option>
+              <option value="Marvel Cómics">Marvel Cómics</option>
+              <option value="Image Cómics">Image Cómics</option>
+              <option value="Dark Horse Cómics">Dark Horse Cómics</option>
+              <option value="otra">Otra</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>¿En qué formato prefieres leer tus Cómics?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="Físico"
+                type="radio"
+                class="input-radio"
+                checked
+              />Físico</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="Digital"
+                type="radio"
+                class="input-radio"
+              />Digital</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="On-line"
+                type="radio"
+                class="input-radio"
+              />On-line</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Selecciona los lugares donde más fácil has encontrado tus Cómics
+              <span class="clue">(Selecciona todos los que hayas utilizado)</span>
+            </p>
+      
+            <label
+              ><input
+                value="Tienda física de Cómics"
+                type="checkbox"
+                class="input-checkbox"
+              />Tienda Física de Cómics</label
+            >
+            <label>
+              <input
+                value="Tienda Online de Cómics"
+                type="checkbox"
+                class="input-checkbox"
+              />Tienda Online de Cómics</label
+            >
+            <label
+              ><input
+                value="Mercado Libre"
+                type="checkbox"
+                class="input-checkbox"
+              />Mercado Libre</label
+            >
+            <label
+              ><input
+                value="Kindle"
+                type="checkbox"
+                class="input-checkbox"
+              />Kindle</label
+            >
+            <label
+              ><input
+                value="Página web de Cómics"
+                type="checkbox"
+                class="input-checkbox"
+              />Página Web de Cómics</label
+            >
+            <label
+              ><input
+                value="Aplicaciones de Cómics"
+                type="checkbox"
+                class="input-checkbox"
+              />Aplicaciones de Cómics</label
+            >
+            <label
+              ><input
+                value="Importados"
+                type="checkbox"
+                class="input-checkbox"
+              />Importados</label
+            >
+            <label
+              ><input
+                value="Convenciones"
+                type="checkbox"
+                class="input-checkbox"
+              />Convenciones</label>
+            
+          </div>
+      
+          <div class="form-group">
+            <p>¿Tienes alguna observación?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="observaciones"
+              placeholder="Ingresa tus observaciones"
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+
+</html>
